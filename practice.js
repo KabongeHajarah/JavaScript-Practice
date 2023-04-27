@@ -76,11 +76,62 @@ const persons = {
     lastName: "Doe",
     id: 5566,
   };
+ 
   persons.name = function() {
-    return (this.firstName + " " + this.lastName).toUpperCase();
-  };
-  console.log();
+  console.log((this.firstName + " " + this.lastName).toUpperCase());
 
+  };
+persons.name();
+
+// Area of a circle is calculated as follows: area = π x r x r. Write a function which calculates areaOfCircle
+const areaOfAcircle= radius=>{
+   
+    return Math.PI*radius*radius
+    
+}
+console.log(areaOfAcircle(10));
+
+// Circumference of a circle is calculated as follows: circumference = 2πr. Write a function which calculates circumOfCircle
+const circumference= radius=>{
+   
+    return (2*(Math.PI*radius))
+    
+}
+console.log(circumference(10));
+
+
+
+// Density of a substance is calculated as follows:density= mass/volume. Write a function which calculates density.
+const density= (mass,volume)=>{
+   
+    return (mass/volume)
+    
+}
+console.log(density(10,20));
+// Speed is calculated by dividing the total distance covered by a moving object divided by the total amount of time taken. Write a function which calculates a speed of a moving object, speed.
+
+const speed= (distance,time)=>{
+   
+    return (distance/time)
+    
+}
+console.log(speed(10,2));
+
+// Weight of a substance is calculated as follows: weight = mass x gravity. Write a function which calculates weight.
+const weight= (mass,gravity)=>{
+   
+    return (mass *gravity)
+    
+}
+console.log(weight(10,2));
+// Temperature in oC can be converted to oF using this formula: oF = (oC x 9/5) + 32. Write a function which convert oC to oF convertCelsiusToFahrenheit.
+
+const temp= (oC)=>{
+   
+    return ((oC * 9/5) + 32)
+    
+}
+console.log(temp(70));
   
 
 
