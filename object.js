@@ -53,9 +53,13 @@ const users = {
   }
   let loggedUser=0;
   user50points=0;
+  
 for (const user in users) {
     if (users[user].isLoggedIn) {
-        loggedUser++;
+      
+      loggedUser++;
+      
+       
         
     }
 
@@ -65,6 +69,7 @@ user50points++;
 
 }
 console.log(user50points);
+
 console.log(loggedUser);
 
 //**** Questions:2, 3 and 4 are based on the following two arrays:myUsers and products ()
