@@ -128,7 +128,7 @@ console.log(weight(10,2));
 
 const temp= (oC)=>{
    
-    return ((oC * 9/5) + 32)
+    return ((oC * 9/5) +     32)
     
 }
 console.log(temp(70));
