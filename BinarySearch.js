@@ -70,7 +70,6 @@ function  des(num){
 
 function newArr(left,right){
 let descendingArr=[];
-
 while(left.length && right.length){
 if(left[0]>right[0]){
 descendingArr.push(left.shift());
@@ -121,5 +120,31 @@ let even= x.map( function (item){
     return item*5
 } )
 console.log(even);
+
+
+function searchBinary( arrs,target) {
+  let left=0;
+  let right=arr.length -1;
+  while  (left<=right){
+   let middle= Math.floor((left + right)/2);
+
+   if (nums[middle]===target){
+return middle
+   }
+   else if ( nums[middle]<target){
+       left= middle +1;
+   }
+   else {
+       right=middle -1;
+   }
+
+}return null
+
+}
+const arrs=[10,2,3,4,64,38,9,20,-20];
+target=64;
+console.log(merge(arrs));
+console.log (binary(arrs,target));
+
 
 
